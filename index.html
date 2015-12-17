@@ -156,47 +156,63 @@
         </div>
         <div class="PointFeedback">
             <a class="btn btn-lg btn-primary checkAnswer" href="#"> Tjek svar </a>
-            <div class="score_container"><span class="scoreText">Korrekte svar: </span><span class="QuestionCounter QuestionTask">3 ud af 5</span> <span class="scoreText"> Fejl: </span><span class="ErrorCount QuestionTask">0</span>
-                </h5>
+            <div class="score_container">
+                <span class="scoreText">Korrekte svar: </span>
+                <span class="QuestionCounter QuestionTask">3 ud af 5</span>
+                <span class="scoreText"> Fejl: </span>
+                <span class="ErrorCount QuestionTask">0</span>
             </div>
-            <div class="page-header">
-                <h1>Grid</h1>
-            </div>
-            <h3>(4 - 8 / 12) To kolonner, der kollapser til en < 768px</h3>
-            <div class="row">
-                <div class="columnbg col-sm-4 col-xs-12"></div>
-                <div class="columnbg col-sm-8 col-xs-12"></div>
-            </div>
-            <h3>(8 - 4 / 12) To kolonner, der kollapser til en < 768px</h3>
-            <div class="row">
-                <div class="columnbg col-sm-8 col-xs-12"></div>
-                <div class="columnbg col-sm-4 col-xs-12"></div>
-            </div>
-            <h3>Tre lige kolonner, der kollapser til to < 768px</h3>
-            <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
-            <div class="row">
-                <div class="columnbg col-md-4 col-xs-12"></div>
-                <div class="columnbg col-md-4 col-xs-6"></div>
-                <div class="columnbg col-md-4 col-xs-6"></div>
-            </div>
-            <h3>(12) 12 kolonner</h3>
-            <div class="row">
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-                <div class="columnbg col-xs-1"></div>
-            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="page-header">
+            <h1>Feedback bokse</h1>
+        </div>
+
+        <span id="feedbackCorrect" class="btn btn-info">Se feedback til kursist ved korrekt svar</span>
+        <span id="feedbackWrong" class="btn btn-info">Se feedback til kursist ved forkert svar</span>
+        <span id="feedbackScore" class="btn btn-info">Se point feedback til kursist </span>
+
+        <div class="page-header">
+            <h1>Grid</h1>
+        </div>
+        <h3>(4 - 8 / 12) To kolonner, der kollapser til en < 768px</h3>
+        <div class="row">
+            <div class="columnbg col-sm-4 col-xs-12"></div>
+            <div class="columnbg col-sm-8 col-xs-12"></div>
+        </div>
+        <h3>(8 - 4 / 12) To kolonner, der kollapser til en < 768px</h3>
+        <div class="row">
+            <div class="columnbg col-sm-8 col-xs-12"></div>
+            <div class="columnbg col-sm-4 col-xs-12"></div>
+        </div>
+        <h3>Tre lige kolonner, der kollapser til to < 768px</h3>
+        <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+        <div class="row">
+            <div class="columnbg col-md-4 col-xs-12"></div>
+            <div class="columnbg col-md-4 col-xs-6"></div>
+            <div class="columnbg col-md-4 col-xs-6"></div>
+        </div>
+        <h3>(12) 12 kolonner</h3>
+        <div class="row">
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+            <div class="columnbg col-xs-1"></div>
+        </div>
+    </div>
 </body>
 <script src="../library/vendor_scripts.js"></script>
 <script src="../library/custom_scripts.js"></script>
+<script src="bootstrap_html_template.js" type="text/javascript"></script>
 <script>
 $(".columnbg").each(function(index) {
     var rand_color = '#' + Math.floor(Math.random() * 16777215).toString(16);
