@@ -186,8 +186,14 @@
 
         <div class="page-header">
             <h1>Kursist instruks</h1>
+        </div> 
+        <div id="instructionWrapper"></div> 
+
+        <div class="page-header">
+            <h1>Kursist forklaring</h1>
         </div>
-        <h4 class="instruktion"><span class="glyphicon glyphicon-arrow-right"></span>Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak. </h4>
+        <div id="explanationWrapper"></div>
+
         <div class="page-header">
             <h1>Point feedback</h1>
         </div>
@@ -302,6 +308,11 @@ $(".columnbg").each(function(index) {
     var rand_color = '#' + Math.floor(Math.random() * 16777215).toString(16);
     $(this).css("background-color", rand_color);
 });
+</script>
+<script type="text/javascript">
+    $('#instructionWrapper').html(instruction('Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
+
+    $('#explanationWrapper').html(explanation('Forklaringstekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
 </script>
 <script type="text/javascript">
     var pagerObj = Object.create(pagerClass);  
