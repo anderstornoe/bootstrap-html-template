@@ -24,7 +24,7 @@ $( document ).on('click', "#feedbackScore", function(event){
 	var HTML = '';
 	HTML += '<h4 class="scoreText">Flot klaret </h4>';
     // HTML += 'Her er dit resultat: <span class="ScoreBox"><h5><span class="scoreText">Korrekte svar: </span><span class="QuestionCounter">10 ud af 10</span><span class="scoreText ml15"> Fejl: </span><span class="ErrorCount">3</span> </h5></span>';
-    HTML += '<div><span class="resultText">Her er dit resultat:</span> ' + '<div class="score_container">' + $(".score_container").html() + '</div> <div class="clear"></div> </div>';
+    HTML += '<div class="scoreWrapper"><span class="resultText">Her er dit resultat:</span> ' + '<div class="score_container">' + $(".score_container").html() + '</div> <div class="clear"></div> </div>';
     HTML += '<div class="btn btn-primary">Prøve igen</div>';
     UserMsgBox("body", HTML);
 });
