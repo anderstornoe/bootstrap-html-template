@@ -15,20 +15,22 @@
     }
     </style>
     <style type="text/css">
-        #dummyTestPageWapper{
-            margin-top: 20px;
-            clear: both;
-        }
-        .dummyTestPageContainer{
-            width: 9%;
-            display: inline-block;
-            /*border: 1px solid #F00;*/ 
-        }
-        .dummyTestPage{
-            border: 1px solid #000; 
-            padding: 25px 0px 25px 0px; 
-            text-align: center;
-        }
+    #dummyTestPageWapper {
+        margin-top: 20px;
+        clear: both;
+    }
+    
+    .dummyTestPageContainer {
+        width: 9%;
+        display: inline-block;
+        /*border: 1px solid #F00;*/
+    }
+    
+    .dummyTestPage {
+        border: 1px solid #000;
+        padding: 25px 0px 25px 0px;
+        text-align: center;
+    }
     </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
@@ -149,7 +151,7 @@
         <div class="page-header">
             <h1>Pager</h1>
         </div>
-        </h4><span class="PagerContainer"></span> 
+        </h4><span class="PagerContainer"></span>
         <div id="dummyTestPageWapper" class="dummyTestPageWapper">
             <div class="dummyTestPageContainer">
                 <div class="dummyTestPage"> side 1 </div>
@@ -182,31 +184,59 @@
                 <div class="dummyTestPage"> side 10 </div>
             </div>
         </div>
-
-
         <div class="page-header">
             <h1>Kursist instruks</h1>
-        </div> 
-        <div id="instructionWrapper"></div> 
-
+        </div>
+        <div id="instructionWrapper"></div>
         <div class="page-header">
             <h1>Kursist forklaring</h1>
         </div>
         <div id="explanationWrapper"></div>
-
         <div class="page-header">
             <h1>Point feedback</h1>
         </div>
         <div class="PointFeedback">
             <a class="btn btn-lg btn-primary checkAnswer" href="#"> Tjek svar </a>
-
             <div class="score_container"><span class="scoreText">Korrekte svar: </span><span class="QuestionCounter QuestionTask">3 ud af 5</span> <span class="scoreText"> Fejl: </span><span class="ErrorCount QuestionTask">0</span>
                 </h5>
             </div>
-        
             <div class="page-header" style="clear:both">
-                <h1>Images</h1>
+                <h1>Images (imgHolder)</h1>
                 <img class="imgHolder img-responsive" src="http://a.bimg.dk/node-images/714/6/2200x/6714335-christian-x.jpg" />
+            </div>
+            <br/>
+            <div class="page-header" style="clear:both">
+                <h1>Kildehenvisning</h1>
+                <div class="kilde_henvisning">Læge Emil Hornemann til Sundhedskommissionen 4.11.1870.
+                    <br/> Kilde:
+                    <a href="http://www.emu.dk/sites/default/files/11.%20Hornemann%20til%20sundhedskommissionen%204.11.1870_0.pdf">emu.dk/sites/default/files/11.%20Hornemann%20til%20sundhedskommissionen%204.11.1870_0.pdf</a>
+                </div>
+            </div>
+            <div class="page-header" style="clear:both">
+                <h1>Sortable text_container</h1>
+                <div class="inner_container col-xs-12 col-sm-8 ui-sortable">
+                    <div class="sortable_container 0 icon_undefined">
+                        <div class="sortable_text_container">Kender du det, at du hver nytårsaften har en masse nytårsforsætter? Sidste år lovede jeg mig selv, at jeg ville begynde til violin og stoppe med at ryge. Hvad skete der? Gæt selv.</div>
+                        <div class="icon_container"></div>
+                    </div>
+                    <div class="sortable_container 2 icon_undefined">
+                        <div class="sortable_text_container">Afslutningsvis kan man sige, at det er en meget menneskelig ting at ville forandre sig. Jeg kan stadig nå at begynde at spille violin. Næste år!</div>
+                        <div class="icon_container"></div>
+                    </div>
+                    <div class="sortable_container 1 icon_undefined">
+                        <div class="sortable_text_container">Således meget klogere, har jeg spurgt mine venner, hvorfor de også har nytårsforsætter. De mente, at nytårsforsætter hører til at gøre status over et år, der er gået, og peger frem mod det næste.</div>
+                        <div class="icon_container"></div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="page-header" style="clear:both">
+                <h1>Text (textHolder) </h1>
+                <div class="textHolder">
+                    <h3>Bacon fra provinsen </h3> Fatback alcatra pork venison flank jerky. Venison pancetta salami alcatra brisket cow filet mignon, turkey strip steak pastrami rump capicola corned beef pork. Fatback boudin chicken, kevin meatloaf beef pork loin ribeye porchetta shankle turkey kielbasa. Cupim meatloaf shoulder, meatball doner beef ribs turkey ribeye. Bacon pastrami shank prosciutto kielbasa. Tenderloin brisket sausage shank kielbasa. Ground round cupim doner short ribs pork loin drumstick bresaola flank chuck. Turkey flank strip steak hamburger, frankfurter swine spare ribs biltong pork chop ribeye tongue capicola leberkas t-bone bacon. Pork belly porchetta pig, ground round turducken sirloin strip steak doner cow ball tip chuck tongue kielbasa. Pastrami fatback shoulder picanha strip steak chicken salami swine ham hock. Brisket jowl bresaola ribeye sausage beef spare ribs ball tip meatball pork belly leberkas corned beef porchetta beef ribs kielbasa. Alcatra picanha brisket salami fatback. Short ribs ham hock pork belly, leberkas drumstick cupim kevin turducken filet mignon tongue tail t-bone turkey kielbasa chuck. Porchetta landjaeger short loin short ribs capicola bacon kielbasa, jowl rump ribeye leberkas meatloaf.
+                </div>
             </div>
             <br/>
             <div class="page-header">
@@ -244,60 +274,14 @@
                 <div class="columnbg col-xs-1"></div>
                 <div class="columnbg col-xs-1"></div>
             </div>
-
-            <div class="score_container">
-                <span class="scoreText">Korrekte svar: </span>
-                <span class="QuestionCounter QuestionTask">3 ud af 5</span>
-                <span class="scoreText"> Fejl: </span>
-                <span class="ErrorCount QuestionTask">0</span>
-            </div>
             <div class="clear"></div>
         </div>
-
         <div class="page-header">
             <h1>Feedback bokse</h1>
         </div>
-
         <span id="feedbackCorrect" class="btn btn-info">Se feedback til kursist ved korrekt svar</span>
         <span id="feedbackWrong" class="btn btn-info">Se feedback til kursist ved forkert svar</span>
         <span id="feedbackScore" class="btn btn-info">Se point feedback til kursist </span>
-
-        <div class="page-header">
-            <h1>Grid</h1>
-        </div>
-        <h3>(4 - 8 / 12) To kolonner, der kollapser til en &lt; 768px</h3>
-        <div class="row">
-            <div class="columnbg col-sm-4 col-xs-12"></div>
-            <div class="columnbg col-sm-8 col-xs-12"></div>
-        </div>
-        <h3>(8 - 4 / 12) To kolonner, der kollapser til en &lt; 768px</h3>
-        <div class="row">
-            <div class="columnbg col-sm-8 col-xs-12"></div>
-            <div class="columnbg col-sm-4 col-xs-12"></div>
-        </div>
-        <h3>Tre lige kolonner, der kollapser til to &lt; 768px</h3>
-        <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
-        <div class="row">
-            <div class="columnbg col-md-4 col-xs-12"></div>
-            <div class="columnbg col-md-4 col-xs-6"></div>
-            <div class="columnbg col-md-4 col-xs-6"></div>
-        </div>
-        <h3>(12) 12 kolonner</h3>
-        <div class="row">
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-            <div class="columnbg col-xs-1"></div>
-
-        </div>
     </div>
 </body>
 <script src="../library/vendor_scripts.js"></script>
@@ -310,13 +294,13 @@ $(".columnbg").each(function(index) {
 });
 </script>
 <script type="text/javascript">
-    $('#instructionWrapper').html(instruction('Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
+$('#instructionWrapper').html(instruction('Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
 
-    $('#explanationWrapper').html(explanation('Forklaringstekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
+$('#explanationWrapper').html(explanation('Forklaringstekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
 </script>
 <script type="text/javascript">
-    var pagerObj = Object.create(pagerClass);  
-    pagerObj.init(".PagerContainer", ".dummyTestPage");
+var pagerObj = Object.create(pagerClass);
+pagerObj.init(".PagerContainer", ".dummyTestPage");
 </script>
 
 </html>
