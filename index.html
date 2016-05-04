@@ -336,6 +336,12 @@
                 <td class="vucColor vucLabel">  </td> <td class="vucColor vuc-wrong"> vuc-wrong </td> <td class="vucColor">  </td> <td class="vucColor ">  </td>
             </tr>
         </table>
+        <div class="page-header">
+            <h1>Carousel / slider</h1>
+        </div>
+        <div class="row">
+            <div id="vucCarousel"></div>
+        </div>
     </div>
 </body>
 <script src="../library/vendor_scripts.js"></script>
@@ -348,13 +354,24 @@ $(".columnbg").each(function(index) {
 });
 </script>
 <script type="text/javascript">
-$('#instructionWrapper').html(instruction('Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
+    $('#instructionWrapper').html(instruction('Instruks tekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
 
-$('#explanationWrapper').html(explanation('Forklaringstekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
+    $('#explanationWrapper').html(explanation('Forklaringstekst til kursisten: Meatloaf tri-tip pancetta fatback swine jerky. Pork chop pancetta beef, leberkas biltong  mignon chicken tongue sausage strip steak.'));
 </script>
 <script type="text/javascript">
-var pagerObj = Object.create(pagerClass);
-pagerObj.init(".PagerContainer", ".dummyTestPage");
+    var pagerObj = Object.create(pagerClass);
+    pagerObj.init(".PagerContainer", ".dummyTestPage");
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        getAjaxData("GET", "../library/json/carouselData.json", false, "json");  
+
+        var cObj = Object.create(carouselClass); // create a new object
+
+        cObj.randomSlides = false;   // Make the slides random at each reload of the page.
+        cObj.bsColum = 'col-8-center';   // Set the number of colums to 6 (e.g. "col-md-6") and center the carouse by adding 3 bootstrap columns on each side.
+        $('#vucCarousel').html(cObj.init(jsonData));
+    });
 </script>
 
 </html>
