@@ -46,3 +46,26 @@ $(".inner_container").sortable({
         console.log("dragstart");
     }
 });
+
+
+
+/*===================================
+=            Microhint:             =
+===================================*/
+
+$(".btn-standard_mh").click(function() {
+    $(".microhint").remove();
+    microhint($(this), "Standard microhint: Køres med 2 argumenter, den div microhintet skal relatere til + den streng der skal være i microhintet");
+});
+
+$(".btn-forkert_mh").click(function() {
+    $(".microhint").remove();
+    microhint($(this), "Forkert / rigtigt microhint: Køres med 3 argumenter, den div microhintet skal relatere til + den streng der skal være i microhintet (kort), samt #bgrfarven, som microhintet skal have", "#ED3E3A");
+});
+
+$(".btn-label_mh").click(function() {
+    $(".microhint").remove();
+    microhint($(this), "<div class='microhint_label_success'>Labelled microhint</div>Her er eksempel med class='microhint_label_success'. Kan også køres med class='microhint_label_danger'");
+});
+
+    /*=====  End of Microhint:   ======*/
